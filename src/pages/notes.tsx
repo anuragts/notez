@@ -30,7 +30,7 @@ export default function Notes() {
         <button type="submit" className="my-5 mx-5  text-xl bg-white text-black border-2 border-white font-semibold py-3 px-7 rounded-full hover:bg-black hover:text-white">Submit</button>
         </form>
         <div className="text-center mt-5">
-        {loading ? (<p>Loading...</p>):(
+        {loading ? (<p>Loading...</p>) : (
           data.map((item: any) => (
             <div key={item.id} className='mt-[2rem] px-5 py-3'>
               <h1 className="text-xl">{item.title}</h1>

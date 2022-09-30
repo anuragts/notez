@@ -23,13 +23,20 @@ export default function Notes() {
     setLoading(false);
   };
   return (
-    <div className="">
+    <div>
       <form onSubmit={handleSubmit}>
         <input type="text" name="title" placeholder="Title" />
         <input type="text" name="body" placeholder="Body" />
         <button type="submit">Submit</button>
+        {loading ? (<p>Loading...</p>):(
+          data.map((item: any) => (
+            <div key={item.id}>
+              <h1>{item.title}</h1>
+              <p>{item.body}</p>
+            </div>
+          ))
+        )}
       </form>
-      {loading ? <p>Loading...</p> : { data }}
     </div>
   );
 }

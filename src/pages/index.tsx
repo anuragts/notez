@@ -8,6 +8,7 @@ const Home: NextPage = () => {
     <div className='text-center mt-[22%] text-3xl font-bold '>
       Hello from Notez
     </div>
+    <a href="/notes">Go</a>
     </>
   )
 }

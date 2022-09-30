@@ -24,19 +24,21 @@ export default function Notes() {
   };
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="title" placeholder="Title" />
-        <input type="text" name="body" placeholder="Body" />
-        <button type="submit">Submit</button>
+      <form onSubmit={handleSubmit} className='flex justify-center flex-row mt-[5rem] flex-wrap'>
+        <input type="text" name="title" placeholder="Title" className="my-5 mx-5" />
+        <input type="text" name="body" placeholder="Body"  className="my-5 mx-5" />
+        <button type="submit" className="my-5 mx-5  text-xl bg-white text-black border-2 border-white font-semibold py-3 px-7 rounded-full hover:bg-black hover:text-white">Submit</button>
+        </form>
+        <div className="text-center mt-5">
         {loading ? (<p>Loading...</p>):(
           data.map((item: any) => (
-            <div key={item.id}>
-              <h1>{item.title}</h1>
-              <p>{item.body}</p>
+            <div key={item.id} className='mt-[2rem] px-5 py-3'>
+              <h1 className="text-xl">{item.title}</h1>
+              <p className="text-xl">{item.body}</p>
             </div>
           ))
         )}
-      </form>
+        </div>
     </div>
   );
 }

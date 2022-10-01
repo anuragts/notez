@@ -21,7 +21,7 @@ const Home: NextPage = () => {
     </button>
     </div>
     <button
-      className='px-6 py-2 bg-black dark:bg-white text-white dark:text-black absolute top-6 left-32'
+      className='px-6 py-2 bg-black dark:bg-white text-white dark:text-black absolute top-6 left-32 rounded-full'
       onClick={()=>setTheme(theme === 'light' ? 'dark' : 'light')}
       >
         Toggle Theme

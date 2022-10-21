@@ -15,7 +15,7 @@ yarn dev
 ```
  Adding Environment Variables
 ```bash
- add Supabase Database url to .env file as 
+ add Supabase  Database url to .env file as 
  DATABASE_URL = "your Supabase Database url"                                                                                                       
 ```
 Creating Prisma Schema
@@ -31,4 +31,4 @@ npx prisma studio
 yarn prisma studio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
+Open the url [http://localhost:3000](http://localhost:3000) with your browser to see the result 
